@@ -1,0 +1,201 @@
+/* Global Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Color Palette Variables: Cream, Charcoal, Brown, Peach */
+body {
+    background-color: #FFF8F0; /* Cream Background */
+    color: #2F2A26;        /* Charcoal Text for strong contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Typography Hierarchy */
+h1, h2, h3 {
+    font-family: Georgia, serif; /* Distinct Heading Font */
+    color: #6B3E26;              /* Earthy Brown for brand alignment */
+    margin-bottom: 15px;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; border-bottom: 2px solid #D88C5A; padding-bottom: 5px; margin-top: 20px; }
+h3 { font-size: 1.4rem; color: #D88C5A; } /* Warm Peach accents */
+
+p { margin-bottom: 15px; }
+
+/* Mobile-First Layout: Stacked Single Column */
+header {
+    background-color: #6B3E26;
+    color: #FFF8F0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #FFF8F0;
+    margin-bottom: 10px;
+}
+
+header img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Stacked links on mobile */
+    gap: 10px;
+}
+
+nav a {
+    color: #FFF8F0;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    background-color: #2F2A26;
+    border-radius: 5px;
+}
+
+/* Structural Layout Blocks */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+section {
+    background-color: #FFF8F0;
+    border: 1px solid #6B3E26;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Media Elements Alignment */
+img, video, picture img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 15px auto;
+}
+
+figure {
+    background-color: #FFF8F0;
+    border: 1px dashed #6B3E26;
+    padding: 10px;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #2F2A26;
+    margin-top: 5px;
+}
+
+audio {
+    display: block;
+    margin: 15px auto;
+    width: 100%;
+}
+
+/* Form Styling with High Accessibility Touch Targets */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+fieldset {
+    border: 2px solid #6B3E26;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+legend {
+    font-weight: bold;
+    color: #6B3E26;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    padding: 12px; /* Generous touch target sizing */
+    margin-top: 5px;
+    border: 1px solid #6B3E26;
+    border-radius: 4px;
+    background-color: #FFF8F0;
+    color: #2F2A26;
+}
+
+button {
+    background-color: #D88C5A; /* Peach for primary call to action */
+    color: #2F2A26;
+    font-weight: bold;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+button[type="reset"] {
+    background-color: #2F2A26;
+    color: #FFF8F0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.85rem;
+    border-top: 1px solid #6B3E26;
+}
+
+/* Responsive Media Query for Tablets and Desktops */
+@media (min-width: 768px) {
+    body {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    
+    nav ul {
+        flex-direction: row; /* Horizontal navigation bar links */
+        gap: 15px;
+    }
+    
+    nav a {
+        background-color: transparent;
+        padding: 5px 10px;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+        color: #D88C5A;
+    }
+}

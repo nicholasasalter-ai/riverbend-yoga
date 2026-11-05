@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops &amp; Events - Riverbend Yoga Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="yoga-logo_c.png" alt="Riverbend Yoga Studio calming wave and lotus logo">
+        <h1>Riverbend Yoga Studio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Classes &amp; Services</a></li>
+                <li><a href="about.html">Our Studio</a></li>
+                <li><a href="events.html">Workshops &amp; Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Monthly Workshops &amp; Events</h2>
+
+        <section>
+            <h3>Upcoming Events</h3>
+            <p>Dive deeper into your personal practice with our educational weekend workshops. These extended sessions focus heavily on specific techniques like restorative relaxation, breathwork fundamentals, and gentle alignment adjustments.</p>
+            
+            <figure>
+                <img src="yoga-workshop_c.png" alt="A small, focused workshop group sitting in a circle practicing synchronized breathing techniques with a teacher">
+                <figcaption>Our monthly Weekend Foundations Workshop emphasizes deep breathing mechanics and basic alignment adjustments for beginners.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h3>Request a Spot</h3>
+            <p>Space in our seasonal workshops is limited to maintain a supportive, intimate setting. Fill out the interest inquiry form below, and a learning coach or studio coordinator will reach out to finalize your registration.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Your Contact Information</legend>
+                    
+                    <p>
+                        <label for="username">Full Name:</label>
+                        <input type="text" id="username" name="username" required placeholder="Jane Doe">
+                    </p>
+                    
+                    <p>
+                        <label for="useremail">Email Address:</label>
+                        <input type="email" id="useremail" name="useremail" required placeholder="jane.doe@example.com">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Yoga Experience &amp; Event Details</legend>
+                    
+                    <p>
+                        <label for="event-interest">Select a Workshop or Class:</label>
+                        <select id="event-interest" name="event-interest" required>
+                            <option value="">--Please choose an option--</option>
+                            <option value="foundations">Weekend Foundations Workshop</option>
+                            <option value="restorative">Deep Restorative Event</option>
+                            <option value="gentle">Gentle Yoga Series</option>
+                            <option value="private">Private Session Inquiry</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="experience">Your Yoga Experience Level:</label>
+                        <select id="experience" name="experience" required>
+                            <option value="">--Please choose an option--</option>
+                            <option value="beginner">Absolute Beginner</option>
+                            <option value="intermediate">Some Experience</option>
+                            <option value="advanced">Regular Practitioner</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <span>Preferred Contact Method:</span>
+                        <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+                        <label class="inline" for="contact-email">Email</label>
+                        
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                        <label class="inline" for="contact-phone">Phone Call</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Details</legend>
+                    <p>
+                        <label for="message">Message or Accessibility Requests:</label>
+                        <textarea id="message" name="message" rows="5" cols="40" placeholder="Please share any physical accommodations or questions you have..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Request</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Riverbend Yoga Studio. All rights reserved. Cultivating inclusive and calm wellness in our local community.</p>
+    </footer>
+
+</body>
+</html>
